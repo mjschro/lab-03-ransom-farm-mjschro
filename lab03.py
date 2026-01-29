@@ -106,6 +106,17 @@ def animal_n_times(func, n):
     return func * n
 
 def farm(num_cows, num_frogs, num_sheep):
+    """
+    Returns the result of animal_n_times for each animal sequentially
+
+    Args:
+        num_ cows: number of cows
+        num_frogs: number of frogs
+        num_sheep: number of sheep
+
+    Returns:
+        String containing all of the animals on the farm based on user input
+    """
     cow_strings = animal_n_times(cow(), num_cows)
     frog_strings = animal_n_times(frog(), num_frogs)
     sheep_strings = animal_n_times(sheep(), num_sheep)
@@ -134,4 +145,3 @@ if __name__ == "__main__":
 
     print(farm(num_cows, num_frogs, num_sheep))
     print("Thanks for stopping by the Ransom Farm! Come back soon!")
-    change
